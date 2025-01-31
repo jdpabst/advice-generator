@@ -18,4 +18,8 @@ router.get('/users', async (req: Request, res: Response) => {
  }
 });
 
+router.get('https://api.adviceslip.com/advice', async (req: Request, res: Response) => {
+ const advice = res
+ return res.status(200).send(advice);
+})
 export default router;
